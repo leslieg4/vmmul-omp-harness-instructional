@@ -15,10 +15,11 @@ void my_dgemv(int n, double* A, double* x, double* y) {
 
       // compute the dot product of rows of A with vector x
       for (int j = 0; j < n; j++) { 
-         sum += A[i,j] * x[j];
+         sum += A[i * n + j] * x[j]; // row major format
       }
 
+      // add to existing y[i] value
       y[i] += sum;
    }
-   
+
 }
