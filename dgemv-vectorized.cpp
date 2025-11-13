@@ -9,4 +9,17 @@ const char* dgemv_desc = "Vectorized implementation of matrix-vector multiply.";
 void my_dgemv(int n, double* A, double* x, double* y) {
    // insert your code here: implementation of vectorized vector-matrix multiply
 
+   // iterate through each row of the matrix A
+   for (int i = 0; i < n; i++) {
+      double sum = 0.0; // initialize the array that holds the sum A[i][j]
+
+      // compute the dot product of rows of A with vector x
+      for (int j = 0; j < n; j++) { 
+         sum += A[i * n + j] * x[j]; // row major format
+      }
+
+      // add to existing y[i] value
+      y[i] += sum;
+   }
+
 }
