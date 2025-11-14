@@ -25,6 +25,19 @@ void my_dgemv(int n, double* A, double* x, double* y) {
    // insert your dgemv code here. you may need to create additional parallel regions,
    // and you will want to comment out the above parallel code block that prints out
    // nthreads and thread_id so as to not taint your timings
+   // iterate through each row of the matrix A
+   #pragma omp parallel for
+   for (int i = 0; i < n; i++) {
+      double sum = 0.0; // initialize the array that holds the sum A[i][j]
+
+      // compute the dot product of rows of A with vector x
+      for (int j = 0; j < n; j++) { 
+         sum += A[i * n + j] * x[j]; // row major format
+      }
+
+      // add to existing y[i] value
+      y[i] += sum;
+   }
 
 }
 
