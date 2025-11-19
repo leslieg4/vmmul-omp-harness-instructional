@@ -1,0 +1,60 @@
+OMP_NUM_THREASDS =  1
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+Elapsed time = 0.000914 
+Working on problem size N=1024 
+Elapsed time = 0.000903 
+Working on problem size N=2048 
+Elapsed time = 0.003598 
+Working on problem size N=4096 
+Elapsed time = 0.014586 
+Working on problem size N=8192 
+Elapsed time = 0.058279 
+Working on problem size N=16384 
+Elapsed time = 0.233155 
+OMP_NUM_THREASDS =  4
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+Elapsed time = 0.000850 
+Working on problem size N=1024 
+Elapsed time = 0.000535 
+Working on problem size N=2048 
+Elapsed time = 0.001798 
+Working on problem size N=4096 
+Elapsed time = 0.004660 
+Working on problem size N=8192 
+Elapsed time = 0.015898 
+Working on problem size N=16384 
+Elapsed time = 0.060780 
+OMP_NUM_THREASDS =  16
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+Elapsed time = 0.001806 
+Working on problem size N=1024 
+Elapsed time = 0.000295 
+Working on problem size N=2048 
+Elapsed time = 0.001662 
+Working on problem size N=4096 
+Elapsed time = 0.003435 
+Working on problem size N=8192 
+Elapsed time = 0.014204 
+Working on problem size N=16384 
+Elapsed time = 0.056789 
+OMP_NUM_THREASDS =  64
+Description:	OpenMP dgemv.
+
+Working on problem size N=1024 
+Elapsed time = 0.006453 
+Working on problem size N=1024 
+Elapsed time = 0.000672 
+Working on problem size N=2048 
+Elapsed time = 0.001728 
+Working on problem size N=4096 
+Elapsed time = 0.003793 
+Working on problem size N=8192 
+Elapsed time = 0.014178 
+Working on problem size N=16384 
+Elapsed time = 0.057477 

@@ -1,0 +1,14 @@
+Description:	Vectorized implementation of matrix-vector multiply.
+
+Working on problem size N=1024 
+Elapsed time = 0.000363 
+Working on problem size N=1024 
+Elapsed time = 0.000378 
+Working on problem size N=2048 
+Elapsed time = 0.000986 
+Working on problem size N=4096 
+Elapsed time = 0.004192 
+Working on problem size N=8192 
+Elapsed time = 0.017182 
+Working on problem size N=16384 
+Elapsed time = 0.069977 
