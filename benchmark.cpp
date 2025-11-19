@@ -100,8 +100,7 @@ int main(int argc, char** argv)
 
         // insert end timer code here, and print out the elapsed time for this problem size
         std::chrono::time_point<std::chrono::high_resolution_clock> end = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> elapsed = end - start; // computation for elapsed time
-        double time_elapsed = std::chrono::duration<double> (end - start).count();
+        double time_elapsed = std::chrono::duration<double> (end - start).count(); // computation for elapsed time
         printf("Elapsed time = %lf \n", time_elapsed);
 
         // now invoke the cblas method to compute the matrix-vector multiplye
